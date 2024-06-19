@@ -1,4 +1,4 @@
-package datastructure.bubbleSort;
+package datastructure.queue;
 
 public class Queue<T> {
     public static class Node<T> {

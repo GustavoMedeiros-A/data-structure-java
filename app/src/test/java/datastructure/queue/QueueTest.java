@@ -5,8 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import datastructure.bubbleSort.Queue;
-
 public class QueueTest {
     private Queue<Integer> queue;
 
