@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.bubbleSort;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
