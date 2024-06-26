@@ -18,7 +18,7 @@ public class LRU<K, V> {
     }
 
     private int lenght;
-    private final int capacity = 10;
+    private int capacity;
     private Node<V> head;
     private Node<V> tail;
 
@@ -26,7 +26,7 @@ public class LRU<K, V> {
     private Map<Node<V>, K> reverseLookup; // Go to the Node back to the KEY
 
     public LRU(int capacity) {
-        capacity = 10;
+        this.capacity = capacity;
         this.lenght = 0;
         this.head = this.tail = null;
         this.lookup = new HashMap<K, Node<V>>();
@@ -99,7 +99,7 @@ public class LRU<K, V> {
     // Adiciona o Nó na frente da list
     private void prepend(Node<V> node) {
         if (this.head == null) {
-            this.head = this.tail = null;
+            this.head = this.tail = node;
             return;
         }
 
